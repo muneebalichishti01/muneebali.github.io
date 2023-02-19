@@ -42,13 +42,16 @@
   width: 13%;
   height: 3%;
 }
-/* #startover:hover {
-  cursor: pointer;
-  border: none;
-  border-radius: 10px;
-  padding: 5px;
-  font-weight: bold;
-} */
+.left-buttons {
+  list-style-type: none;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  Position: absolute;
+  left: 40px;
+  width: 8.5%;
+  height: 3%;
+}
 /*------------CONTENT------------*/
 #content-container {
   display: flex;
@@ -143,18 +146,6 @@
   border-color: white;
 }
 /*------------------ANSWER-------------------*/
-/*#startover {
-  font-size: 18px;
-  text-align: center;
-  height: 30px;
-  width: 100px;
-  border: 2px solid rgb(234 234 243);
-  border-radius: 5px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-
-  color:rgb(28, 101, 135);
-  text-shadow: 0px 0px 3px rgb(87, 135, 165);
-}*/
 #answer {
   /*display: ruby-text;*/
   text-align: center;
@@ -247,7 +238,7 @@ footer {
   cursor: open;
 }
 /*-----------------------------*/
-#hints, #rules {
+#hints, #rules, #home, #back {
   width: 50px;
   height: 24px;
   border-radius: 220px;
@@ -261,10 +252,10 @@ footer {
   background: rgb(81, 80, 80);
   color: #f5f5f5;
 }
-#hints:hover, #rules:hover {
+#hints:hover, #rules:hover, #home:hover, #back:hover {
   box-shadow: 0 0 20px 0px #4948483a;
 }
-#hints .icon, #rules .icon {
+#hints .icon, #rules .icon, #home .icon, #back .icon {
   position: absolute;
   height: 20px;
   width: 20px;
@@ -273,23 +264,23 @@ footer {
   align-items: center;
   transition: all 0.5s;
 }
-#hints .text, #rules .text {
+#hints .text, #rules .text, #home .text, #back .text {
   transform: translateX(15px);
 }
-#hints:hover .icon, #rules:hover .icon {
-  width: 45px;
+#hints:hover .icon, #rules:hover .icon, #home:hover .icon, #back:hover .icon {
+  width: 50px;
 }
-#hints:hover .text, #rules:hover .text {
+#hints:hover .text, #rules:hover .text, #home:hover .text, #back:hover .text {
   transition: all 0.5s;
   opacity: 0;
 }
-#hints:focus,#rules:focus {
+#hints:focus, #rules:focus, #home:focus, #back:focus {
   outline: none;
 }
-#hints:active .icon,#rules:active .icon {
+#hints:active .icon,#rules:active .icon, #home:active .icon, #back:active .icon {
   transform: scale(0.85);
 }
-#hints:hover,#rules:hover{
+#hints:hover, #rules:hover, #home:hover, #back:hover {
   background: rgb(87, 135, 165);
   color: #f5f5f5;
   box-shadow: 0 0 20px 0px #2e2e2e3a;
@@ -365,3 +356,4 @@ footer {
   color: #000;
   font-weight: bold;
  }
+ /*-----------------------------*/
