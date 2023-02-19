@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Wordle</title>
+  <link rel="stylesheet" href="wordle/style.css" />
+</head>
+
+<body id="body">
+<!------------------------------------------------------------------------------------->
+
+<!------------------HEADER------------------->
+  <nav class="header">
+    <div class="left-title">WORDLE</div>
+    
+  
+    <ul class="right-buttons">
+      <!--<li><button buttontype = "button" id="theme">&#9681</button></li>-->
+      <li><input type="checkbox" id="theme"></li>
+
+      <!--<li><button buttontype = "button" id="hints">&#63</button></li>-->
+      <li><button id="hints"><span class="icon"><b>?</b></span><span class="text"><i>hint</i></span></button></li>
+
+      <!--<li><button buttontype = "button" id="rules">&#9432</button></li>-->
+      <li><button id="rules"><span class="icon"><b>&#9432</b></span><span class="text"><i>rules</i></span></button></li>
+    </ul>
+  </nav>
+<!------------------CONTENT------------------>
+  <div id="content-container">     <!--MAIN-->
+<!-------------------GAME-------------------->
+    <div id="game-content">        <!--LEFT-->
+<!-------------------BOARD------------------->
+      <div id="board-container">  <!--BOARD-->
+        <div id="board"></div>
+        <div id = "image">
+          <img id="congos" src = "wordle/congos.png" alt="Congrats!!!">
+        </div>
+      </div>
+      <!--<div><button type="button" id="startover">Start Over</button></div>-->
+      <div><button id="startover">Start Over</button></div>
+<!------------------------------------------->
+    </div>
+    <div id="right-rulemenu">
+<!-------------------RULES------------------->
+      <h2>Rules</h2>
+      <ul>
+        <li>1. The game is played on a grid that has 4 letter word. You will be given a hidden word.</li>
+        <li>2. The objective of the wordle is to find all the correct letters of that word.</li>
+        <li>3. Letters will be placed horizontally on the grid.</li>
+        <li>4. Letters can be removed by using <code>BACKSPACE</code>.</li>
+        <li>5. Start by typing any letter. Then hit <code>ENTER</code>.</li>
+        <li>6. Letters with green background are in the right spot.</li>
+        <li>7. Letters with yellow background exist in the word, but are in wrong box.</li>
+        <li>8. Letters with gray background do not exist in the word.</li>
+        <li>9. If you need a hint, click the <code>&#63</code> icon.</li>
+        <li>10. When you find all the letters, you win!</li>
+      </ul>
+    </div>
+<!------------------ANSWER------------------->
+    <div id="answer"></div>
+  </div>
+  <footer><p>&#xA9 Muneeb Ali 2023</p></footer>
+<!------------------------------------------------------------------------------------->
+  <script src="wordle/wordle.js"></script>
+</body>
+
+</html>
